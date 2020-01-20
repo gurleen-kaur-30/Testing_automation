@@ -80,7 +80,7 @@ public class Calculator {
 		JButton btn9 = new JButton("9");
 		btn9.setFont(new Font("Dialog", Font.BOLD, 20));
 		btn9.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
+			public void actionPerformed(ActionEvent e) { 	
 				String number = textField_1.getText() + btn9.getText();
 				textField_1.setText(number);
 			}
@@ -93,6 +93,8 @@ public class Calculator {
 		btnX.setFont(new Font("Dialog", Font.BOLD, 18));
 		btnX.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String number = textField_1.getText() + btnX.getText();
+				textField_1.setText(number);
 			}
 		});
 		btnX.setBounds(180, 83, 50, 50);
@@ -137,6 +139,8 @@ public class Calculator {
 		btnMinus.setFont(new Font("Dialog", Font.BOLD, 18));
 		btnMinus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String number = textField_1.getText() + btnMinus.getText();
+				textField_1.setText(number);
 			}
 		});
 		btnMinus.setBounds(180, 139, 50, 50);
@@ -182,6 +186,8 @@ public class Calculator {
 		btnPlus.setFont(new Font("Dialog", Font.BOLD, 18));
 		btnPlus.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String number = textField_1.getText() + btnPlus.getText();
+				textField_1.setText(number);
 			}
 		});
 		btnPlus.setBounds(180, 195, 52, 50);
@@ -191,6 +197,8 @@ public class Calculator {
 		btnDot.setFont(new Font("Dialog", Font.BOLD, 20));
 		btnDot.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String number = textField_1.getText() + btnDot.getText();
+				textField_1.setText(number);
 			}
 		});
 		btnDot.setBounds(12, 251, 52, 50);
@@ -213,6 +221,7 @@ public class Calculator {
 		btnEq.setFont(new Font("Dialog", Font.BOLD, 20));
 		btnEq.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				
 			}
 		});
 		btnEq.setBounds(124, 251, 52, 50);
@@ -223,6 +232,8 @@ public class Calculator {
 		btnDiv.setFont(new Font("Dialog", Font.BOLD, 18));
 		btnDiv.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				String number = textField_1.getText() + btnDiv.getText();
+				textField_1.setText(number);
 			}
 		});
 		btnDiv.setBounds(180, 251, 50, 50);
