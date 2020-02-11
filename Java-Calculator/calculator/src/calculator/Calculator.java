@@ -5,8 +5,6 @@ import static calculator.Evaluate.evaluate;
 
 import javax.swing.JFrame;
 import javax.swing.JTextField;
-import java.awt.BorderLayout;
-import java.awt.FlowLayout;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -242,7 +240,33 @@ public class Calculator {
 		btnDiv.setBounds(180, 251, 50, 50);
 		frame.getContentPane().add(btnDiv);
 		
+		JButton btnClear = new JButton("C");
+		btnClear.setForeground(SystemColor.desktop);
+		btnClear.setFont(new Font("Dialog", Font.BOLD, 18));
+		btnClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				String str = textField_1.getText();
+				String result = "";
+				if ((str != null) && (str.length() > 0)) {
+				      result = str.substring(0, str.length() - 1);
+				   }
+				textField_1.setText(result);
+			}
+		});
+		btnClear.setBounds(80, 310, 68, 50);
+		frame.getContentPane().add(btnClear);
+		
+		JButton btnAllClear = new JButton("AC");
+		btnAllClear.setForeground(SystemColor.desktop);
+		btnAllClear.setFont(new Font("Dialog", Font.BOLD, 18));
+		btnAllClear.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				textField_1.setText("");
+			}
+		});
+		btnAllClear.setBounds(160, 310, 68, 50);
+		frame.getContentPane().add(btnAllClear);
+		
 		
 	}
-	
 }
