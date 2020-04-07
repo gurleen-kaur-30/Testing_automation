@@ -17,7 +17,7 @@ pipeline {
         stage('maven build') {
             steps {
                 echo '> Building the maven application ...'
-                sh 'cd Java-Calculator && cd  && mvn clean install'
+                sh 'cd Java-Calculator && cd calculator  && mvn clean install'
             }  
             post {
                 success{
