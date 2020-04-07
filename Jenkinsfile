@@ -15,16 +15,22 @@ pipeline {
                 checkout scm
             }
         }
-        stage('maven build') {
+        stage('Build') {
             steps {
-                echo '> Building the maven application ...'
-                sh 'cd Java-Calculator && cd  && mvn clean install'
-            }  
-            post {
-                success{
-                    echo "build successful"
-                }
+                sh 'cd Java-Calculator && cd  && mvn clean install' 
+                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
             }
         }
+        // stage('maven build') {
+        //     steps {
+        //         echo '> Building the maven application ...'
+        //         sh 'cd Java-Calculator && cd  && mvn clean install'
+        //     }  
+        //     post {
+        //         success{
+        //             echo "build successful"
+        //         }
+        //     }
+        // }
     }
 }
