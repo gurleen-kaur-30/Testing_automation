@@ -1,8 +1,7 @@
 pipeline {
     agent any
     tools {
-        maven 'Maven 3.3.9'
-        jdk 'jdk8'
+        maven 'maven'
     }
     options {
         skipDefaultCheckout(true)
@@ -15,22 +14,16 @@ pipeline {
                 checkout scm
             }
         }
-        stage('Build') {
+        stage('maven build') {
             steps {
-                sh 'cd Java-Calculator && cd  && mvn clean install' 
-                archiveArtifacts artifacts: '**/target/*.jar', fingerprint: true 
+                echo '> Building the maven application ...'
+                sh 'cd Java-Calculator && cd  && mvn clean install'
+            }  
+            post {
+                success{
+                    echo "build successful"
+                }
             }
         }
-        // stage('maven build') {
-        //     steps {
-        //         echo '> Building the maven application ...'
-        //         sh 'cd Java-Calculator && cd  && mvn clean install'
-        //     }  
-        //     post {
-        //         success{
-        //             echo "build successful"
-        //         }
-        //     }
-        // }
     }
 }
