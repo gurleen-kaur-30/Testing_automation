@@ -18,6 +18,8 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.0</version>
         <configuration>
+       	 <fork>true</fork>
+         <executable>/usr/lib/jvm/java-1.8.0-openjdk-amd64/bin/javac</executable>
           <source>1.8</source>
           <target>1.8</target>
         </configuration>
