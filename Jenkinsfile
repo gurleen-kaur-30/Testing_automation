@@ -21,6 +21,7 @@ pipeline {
             }  
             post {
                 success{
+                    sh 'cd Java-Calculator && cd calculator  && mvn test'
                     echo "build successful"
                 }
             }
