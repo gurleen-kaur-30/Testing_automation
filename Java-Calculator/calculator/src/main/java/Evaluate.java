@@ -1,4 +1,4 @@
-package calculator;
+package main.java;
 
 import java.util.Stack;
 
@@ -74,9 +74,6 @@ public class Evaluate {
 
 	 // returns false if op1 has more precedence than op2
 	    public static boolean hasPrecedence(char op1, char op2) {
-	        if (op2 == '(' || op2 == ')')
-	            return false;
-
 	        if ((op1 == 'X' || op1 == '/') && (op2 == '+' || op2 == '-'))
 	            return false;
 
@@ -96,7 +93,7 @@ public class Evaluate {
 	            case '/':
 	                if (b == 0)
 	                    throw new
-	                          UnsupportedOperationException("Cannot divide by zero");
+	                          ArithmeticException("Cannot divide by zero");
 	                return a / b;
 	        }
 	        return 0;

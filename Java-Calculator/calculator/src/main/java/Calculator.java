@@ -1,8 +1,6 @@
-package calculator;
+package main.java;
 
 import java.awt.EventQueue;
-import static calculator.Evaluate.evaluate;
-
 import javax.swing.JFrame;
 import javax.swing.JTextField;
 import javax.swing.JButton;
@@ -220,7 +218,7 @@ public class Calculator {
 		btnEq.setFont(new Font("Dialog", Font.BOLD, 20));
 		btnEq.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-	            double result = evaluate(textField_1.getText());
+	            double result = Evaluate.evaluate(textField_1.getText());
 	            String output = Double.toString(result);
 	            textField_1.setText(output);
 			}
