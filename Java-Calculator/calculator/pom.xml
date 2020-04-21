@@ -63,7 +63,7 @@
       <configuration>
         <archive>
           <manifest>
-            <mainClass>calculator.Calculator</mainClass>
+            <mainClass>main.java.Calculator</mainClass>
           </manifest>
         </archive>
         <descriptorRefs>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--<?xml-stylesheet type="text/xsl" href="format.xsl"?>-->
+<report style="Complete">
+  <project>
+    <name>Calculator</name>
+    <version>1.0</version>
+    <test-start>Tue Apr 21 21:44:21 IST 2020</test-start>
+    <test-end>Tue Apr 21 21:44:25 IST 2020</test-end>
+    <test-length>00:00:04</test-length>
+    <average-cap-duration>867</average-cap-duration>
+    <expectedNumSteps>5</expectedNumSteps>
+    <numStepsTested>5</numStepsTested>
+    <numEventHandlerSteps>0</numEventHandlerSteps>
+    <numFailedSteps>0</numFailedSteps>
+    <testsuite duration="0:00:02.062">
+      <name>Test Operations</name>
+      <status>1</status>
+      <aut>
+        <name>Calculator</name>
+        <config>Calculator@localhost</config>
+        <server>localhost</server>
+        <cmdline-parameter>-jar calculator-0.0.1-SNAPSHOT-jar-with-dependencies.jar</cmdline-parameter>
+      </aut>
+      <test-run>
+        <testcase duration="0:00:02.062">
+          <name>CheckAdd</name>
+          <status>1</status>
+          <testcase duration="0:00:00.239">
+            <name>Click Button1</name>
+            <status>1</status>
+            <testcase duration="0:00:00.237">
+              <name>ub_grc_clickLeft</name>
+              <status>1</status>
+              <parameter>
+                <parameter-name>NUMBER_OF_CLICKS</parameter-name>
+                <parameter-type>Integer</parameter-type>
+                <parameter-value>1</parameter-value>
+              </parameter>
+              <testcase duration="0:00:00.237">
+                <name>ub_grc_click</name>
+                <status>1</status>
+                <parameter>
+                  <parameter-name>NUMBER_OF_CLICKS</parameter-name>
+                  <parameter-type>Integer</parameter-type>
+                  <parameter-value>1</parameter-value>
+                </parameter>
+                <parameter>
+                  <parameter-name>MOUSE_BUTTON</parameter-name>
+                  <parameter-type>Integer</parameter-type>
+                  <parameter-value>1</parameter-value>
+                </parameter>
+                <step duration="0:00:00.236">
+                  <name>click</name>
+                  <status>1</status>
+                  <timestamp>Tue Apr 21 21:44:23 IST 2020</timestamp>
+                  <component-name>button1</component-name>
+                  <component-type>Graphics Component</component-type>
+                  <component-heuristic-match>0.9999999999999999</component-heuristic-match>
+                  <action-type>Click</action-type>
+                  <parameter>
+                    <parameter-name>Number of Clicks</parameter-name>
+                    <parameter-type>Integer</parameter-type>
+                    <parameter-value>1</parameter-value>
+                  </parameter>
+                  <parameter>
+                    <parameter-name>Mouse Button</parameter-name>
+                    <parameter-type>Integer</parameter-type>
+                    <parameter-value>1</parameter-value>
+                  </parameter>
+                </step>
+              </testcase>
+            </testcase>
+          </testcase>
+          <testcase duration="0:00:00.598">
+            <name>Click Add Button</name>
+            <status>1</status>
+            <testcase duration="0:00:00.598">
+              <name>ub_grc_clickLeft</name>
+              <status>1</status>
+              <parameter>
+                <parameter-name>NUMBER_OF_CLICKS</parameter-name>
+                <parameter-type>Integer</parameter-type>
+                <parameter-value>1</parameter-value>
+              </parameter>
+              <testcase duration="0:00:00.598">
+                <name>ub_grc_click</name>
+                <status>1</status>
+                <parameter>
+                  <parameter-name>NUMBER_OF_CLICKS</parameter-name>
+                  <parameter-type>Integer</parameter-type>
+                  <parameter-value>1</parameter-value>
+                </parameter>
+                <parameter>
+                  <parameter-name>MOUSE_BUTTON</parameter-name>
+                  <parameter-type>Integer</parameter-type>
+                  <parameter-value>1</parameter-value>
+                </parameter>
+                <step duration="0:00:00.598">
+                  <name>click</name>
+                  <status>1</status>
+                  <timestamp>Tue Apr 21 21:44:23 IST 2020</timestamp>
+                  <component-name>add button</component-name>
+                  <component-type>Graphics Component</component-type>
+                  <component-heuristic-match>0.9999999999999999</component-heuristic-match>
+                  <action-type>Click</action-type>
+                  <parameter>
+                    <parameter-name>Number of Clicks</parameter-name>
+                    <parameter-type>Integer</parameter-type>
+                    <parameter-value>1</parameter-value>
+                  </parameter>
+                  <parameter>
+                    <parameter-name>Mouse Button</parameter-name>
+                    <parameter-type>Integer</parameter-type>
+                    <parameter-value>1</parameter-value>
+                  </parameter>
+                </step>
+              </testcase>
+            </testcase>
+          </testcase>
+          <testcase duration="0:00:00.603">
+            <name>Click Button2</name>
+            <status>1</status>
+            <testcase duration="0:00:00.603">
+              <name>ub_grc_clickLeft</name>
+              <status>1</status>
+              <parameter>
+                <parameter-name>NUMBER_OF_CLICKS</parameter-name>
+                <parameter-type>Integer</parameter-type>
+                <parameter-value>1</parameter-value>
+              </parameter>
+              <testcase duration="0:00:00.602">
+                <name>ub_grc_click</name>
+                <status>1</status>
+                <parameter>
+                  <parameter-name>NUMBER_OF_CLICKS</parameter-name>
+                  <parameter-type>Integer</parameter-type>
+                  <parameter-value>1</parameter-value>
+                </parameter>
+                <parameter>
+                  <parameter-name>MOUSE_BUTTON</parameter-name>
+                  <parameter-type>Integer</parameter-type>
+                  <parameter-value>1</parameter-value>
+                </parameter>
+                <step duration="0:00:00.602">
+                  <name>click</name>
+                  <status>1</status>
+                  <timestamp>Tue Apr 21 21:44:24 IST 2020</timestamp>
+                  <component-name>button2</component-name>
+                  <component-type>Graphics Component</component-type>
+                  <component-heuristic-match>0.9999999999999999</component-heuristic-match>
+                  <action-type>Click</action-type>
+                  <parameter>
+                    <parameter-name>Number of Clicks</parameter-name>
+                    <parameter-type>Integer</parameter-type>
+                    <parameter-value>1</parameter-value>
+                  </parameter>
+                  <parameter>
+                    <parameter-name>Mouse Button</parameter-name>
+                    <parameter-type>Integer</parameter-type>
+                    <parameter-value>1</parameter-value>
+                  </parameter>
+                </step>
+              </testcase>
+            </testcase>
+          </testcase>
+          <testcase duration="0:00:00.604">
+            <name>Click Equals Button</name>
+            <status>1</status>
+            <testcase duration="0:00:00.603">
+              <name>ub_grc_clickLeft</name>
+              <status>1</status>
+              <parameter>
+                <parameter-name>NUMBER_OF_CLICKS</parameter-name>
+                <parameter-type>Integer</parameter-type>
+                <parameter-value>1</parameter-value>
+              </parameter>
+              <testcase duration="0:00:00.603">
+                <name>ub_grc_click</name>
+                <status>1</status>
+                <parameter>
+                  <parameter-name>NUMBER_OF_CLICKS</parameter-name>
+                  <parameter-type>Integer</parameter-type>
+                  <parameter-value>1</parameter-value>
+                </parameter>
+                <parameter>
+                  <parameter-name>MOUSE_BUTTON</parameter-name>
+                  <parameter-type>Integer</parameter-type>
+                  <parameter-value>1</parameter-value>
+                </parameter>
+                <step duration="0:00:00.602">
+                  <name>click</name>
+                  <status>1</status>
+                  <timestamp>Tue Apr 21 21:44:24 IST 2020</timestamp>
+                  <component-name>equals button</component-name>
+                  <component-type>Graphics Component</component-type>
+                  <component-heuristic-match>0.9999999999999999</component-heuristic-match>
+                  <action-type>Click</action-type>
+                  <parameter>
+                    <parameter-name>Number of Clicks</parameter-name>
+                    <parameter-type>Integer</parameter-type>
+                    <parameter-value>1</parameter-value>
+                  </parameter>
+                  <parameter>
+                    <parameter-name>Mouse Button</parameter-name>
+                    <parameter-type>Integer</parameter-type>
+                    <parameter-value>1</parameter-value>
+                  </parameter>
+                </step>
+              </testcase>
+            </testcase>
+          </testcase>
+          <testcase duration="0:00:00.017">
+            <name>result</name>
+            <status>1</status>
+            <parameter>
+              <parameter-name>TEXT</parameter-name>
+              <parameter-type>String</parameter-type>
+              <parameter-value>3.0</parameter-value>
+            </parameter>
+            <parameter>
+              <parameter-name>OPERATOR</parameter-name>
+              <parameter-type>String</parameter-type>
+              <parameter-value>equals</parameter-value>
+            </parameter>
+            <parameter>
+              <parameter-name>TIMEOUT_IN_MILLISECS</parameter-name>
+              <parameter-type>Integer</parameter-type>
+              <parameter-value>0</parameter-value>
+            </parameter>
+            <step duration="0:00:00.017">
+              <name>check Text</name>
+              <status>1</status>
+              <timestamp>Tue Apr 21 21:44:25 IST 2020</timestamp>
+              <component-name>nn_nn_ctx</component-name>
+              <component-type>Text Component</component-type>
+              <component-heuristic-match>0.9999999999999999</component-heuristic-match>
+              <action-type>Check Text</action-type>
+              <parameter>
+                <parameter-name>Text</parameter-name>
+                <parameter-type>String</parameter-type>
+                <parameter-value>3.0</parameter-value>
+              </parameter>
+              <parameter>
+                <parameter-name>Operator</parameter-name>
+                <parameter-type>String</parameter-type>
+                <parameter-value>equals</parameter-value>
+              </parameter>
+              <parameter>
+                <parameter-name>Timeout in ms</parameter-name>
+                <parameter-type>Integer</parameter-type>
+                <parameter-value>0</parameter-value>
+              </parameter>
+            </step>
+          </testcase>
+        </testcase>
+      </test-run>
+    </testsuite>
+  </project>
+</report>

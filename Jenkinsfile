@@ -26,5 +26,14 @@ pipeline {
                 }
             }
         }
+
+        stage('Jubula tests') {
+            steps {
+                echo 'Running Jubula tests'
+                sh 'cd $JUBULA_HOME'
+                sh './testexec -project "Calculator" -version "1.0" -testsuite "Test Operations" -autconfig "Calculator_final@localhost"  -dbscheme "Default Embedded (H2)" -dbuser sa -dbpw "" -resultdir "/home/gurleen/Desktop/testing_automation/Testing_automation/Jubula" -resultname "reports"'
+                echo "test successful"
+            }
+        }
     }
 }
