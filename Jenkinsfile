@@ -30,8 +30,7 @@ pipeline {
         stage('Jubula tests') {
             steps {
                 echo 'Running Jubula tests'
-                sh 'cd /home/gurleen/jubula_8.7.1.046/ite && ./testexec -project "Calculator" -version "1.0" -testsuite "Test Operations" -autconfig "Calculator@localhost" -datadir "/home/gurleen/.jubula/database"  -dbscheme "Default Embedded (H2)" -dbuser sa -dbpw "" -resultdir "/home/gurleen/Desktop/testing_automation/Testing_automation/Jubula" -resultname "reports"
-'
+                sh 'cd /home/gurleen/jubula_8.7.1.046/ite && ./testexec -project "Calculator" -version "1.0" -testsuite "Test Operations" -autconfig "Calculator@localhost" -datadir "/home/gurleen/.jubula/database"  -dbscheme "Default Embedded (H2)" -dbuser sa -dbpw "" -resultdir "/home/gurleen/Desktop/testing_automation/Testing_automation/Jubula" -resultname "reports"'
                 echo "test successful"
             }
         }
