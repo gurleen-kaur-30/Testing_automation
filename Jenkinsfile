@@ -30,7 +30,7 @@ pipeline {
         stage('Jubula tests') {
             steps {
                 echo 'Running Jubula tests'
-                sh 'cd /var/lib/jenkins/jubula/ite && ./testexec -project "Calculator" -version "1.0" -testsuite "Test Operations" -autconfig "Calculator@localhost"  -dbscheme "Default Embedded (H2)" -dbuser sa -dbpw "" -resultdir "$WORKSPACE/Jubula" -resultname "reports"'
+                sh 'cd /home/gurleen/jubula_8.7.1.046/ite && ./testexec -project "Calculator" -version "1.0" -testsuite "Test Operations" -autconfig "Calculator@localhost"  -dbscheme "Default Embedded (H2)" -dbuser sa -dbpw "" -resultdir "$WORKSPACE/Jubula" -resultname "reports"'
                 echo "test successful"
             }
         }
