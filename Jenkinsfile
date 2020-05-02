@@ -23,6 +23,7 @@ pipeline {
                 success{
                     sh 'cd Java-Calculator && cd calculator  && mvn test'
                     echo "build successful"
+                    export DISPLAY=:0
                 }
             }
         }
